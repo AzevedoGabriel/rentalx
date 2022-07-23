@@ -27,7 +27,7 @@
             {
               "ts": "never"
             }
-        ],
+         ],
         "prettier/prettier": "error"
     },
     "settings": {
