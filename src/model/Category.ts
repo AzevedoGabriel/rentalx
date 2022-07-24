@@ -1,13 +1,14 @@
+/* eslint-disable import/prefer-default-export */
 import { v4 as uuidv4 } from 'uuid';
 
 class Category {
   id?: string;
 
-  name: string;
+  name!: string;
 
-  description: string;
+  description!: string;
 
-  created_at: Date;
+  created_at!: Date;
 
   constructor() {
     if (!this.id) {
