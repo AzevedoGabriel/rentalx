@@ -1,12 +1,13 @@
-import { ICategoriesRepository } from '../repositories/ICategoriesRepository';
-import { ISpecificationRepository } from '../repositories/ISpecificationRepository';
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable no-useless-constructor */
+import { ISpecificationRepository } from '../../repositories/ISpecificationRepository';
 
 interface IRequest {
   name: string;
   description: string;
 }
 
-class CreateSpecificationService {
+class CreateSpecificationUseCases {
   constructor(private specificationRepository: ISpecificationRepository) {}
 
   execute({ description, name }: IRequest) {
@@ -21,4 +22,4 @@ class CreateSpecificationService {
   }
 }
 
-export { CreateSpecificationService };
+export { CreateSpecificationUseCases };
